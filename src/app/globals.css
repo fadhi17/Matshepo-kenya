@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+:root {
+  --primary-blue: #0875c9;
+  --primary-blue-hover: #065ea2;
+  --deep-navy: #073b69;
+  --deep-navy-dark: #05294a;
+  --secondary-teal: #0795a5;
+  --secondary-teal-hover: #057885;
+  --accent-yellow: #ffc400;
+  --accent-yellow-hover: #e5b000;
+  --white: #ffffff;
+  --light-bg: #f5f8fc;
+  --dark-text: #172333;
+  --secondary-text: #637083;
+  --border-subtle: #e2e8f0;
+  --card-bg: #ffffff;
+}
+
+@theme {
+  --color-primary-blue: #0875c9;
+  --color-primary-blue-hover: #065ea2;
+  --color-deep-navy: #073b69;
+  --color-deep-navy-dark: #05294a;
+  --color-secondary-teal: #0795a5;
+  --color-accent-yellow: #ffc400;
+  --color-accent-yellow-hover: #e5b000;
+  --color-light-bg: #f5f8fc;
+  --color-dark-text: #172333;
+  --color-secondary-text: #637083;
+  --color-border-subtle: #e2e8f0;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+body {
+  background-color: var(--light-bg);
+  color: var(--dark-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Glassmorphism utility */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+/* Subtle shadows */
+.card-shadow {
+  box-shadow: 0 4px 20px -2px rgba(7, 59, 105, 0.06), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+.card-shadow-hover {
+  transition: all 0.25s ease;
+}
+
+.card-shadow-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px -4px rgba(7, 59, 105, 0.12), 0 4px 10px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Accent Button */
+.btn-yellow {
+  background-color: #ffc400;
+  color: #172333;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.btn-yellow:hover {
+  background-color: #e5b000;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 196, 0, 0.35);
+}
+
+.btn-blue {
+  background-color: #0875c9;
+  color: #ffffff;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-blue:hover {
+  background-color: #065ea2;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(8, 117, 201, 0.3);
+}
+
+.btn-outline-blue {
+  border: 2px solid #0875c9;
+  color: #0875c9;
+  font-weight: 600;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-blue:hover {
+  background-color: #0875c9;
+  color: #ffffff;
+}
+
+/* Container helper */
+.container-custom {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .container-custom {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
