@@ -8,7 +8,6 @@ import {
   Phone,
   Mail,
   MapPin,
-  Clock,
   Send,
   CheckCircle2,
   AlertCircle,
@@ -196,14 +195,6 @@ export const ContactClient: React.FC = () => {
                   >
                     {companyData.email}
                   </a>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3 text-xs sm:text-sm text-slate-700">
-                <Clock className="w-5 h-5 text-[#0795A5] shrink-0 mt-0.5" />
-                <div>
-                  <strong className="block text-slate-900 font-bold">Business Operating Hours:</strong>
-                  <span>{companyData.businessHours}</span>
                 </div>
               </div>
             </div>

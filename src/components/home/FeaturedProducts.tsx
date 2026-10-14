@@ -11,8 +11,21 @@ export const FeaturedProducts: React.FC = () => {
   const { openQuoteModal } = useQuote();
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  // Take the 6 featured products from the reference
-  const featured = productsData.slice(0, 6);
+  // Featured products across categories highlighting Simba Grip, Tile Lit, and Ultraguard
+  const featuredOrder = [
+    "simba-grip-777",
+    "tile-lit",
+    "express-plaster",
+    "cemora",
+    "ultraguard-2k",
+    "simba-grip-818",
+    "grip-master-plus",
+    "grip-master",
+    "simba-grip-555",
+  ];
+  const featured = featuredOrder
+    .map((id) => productsData.find((p) => p.id === id))
+    .filter(Boolean) as typeof productsData;
 
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
@@ -84,6 +97,7 @@ export const FeaturedProducts: React.FC = () => {
                       alt={`${product.name} packaging`}
                       fill
                       sizes="260px"
+                      quality={90}
                       className="object-contain group-hover:scale-108 transition-transform duration-300"
                     />
                   </div>

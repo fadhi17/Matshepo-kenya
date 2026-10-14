@@ -22,6 +22,7 @@ export const ProductsClient: React.FC = () => {
 
   const [selectedCategory, setSelectedCategory] = useState<ProductCategory>("All Products");
   const [searchQuery, setSearchQuery] = useState("");
+  const [cardImageIndex, setCardImageIndex] = useState<Record<string, number>>({});
   const { openQuoteModal } = useQuote();
 
   useEffect(() => {
@@ -139,35 +140,78 @@ export const ProductsClient: React.FC = () => {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredProducts.map((product) => (
-              <div
-                key={product.id}
-                className="bg-white rounded-2xl border border-slate-200/80 hover:border-blue-300 p-5 flex flex-col justify-between card-shadow-hover group"
-              >
-                <div>
-                  {/* Image Presentation */}
-                  <div className="relative aspect-[4/3] bg-[#F5F8FC] rounded-xl overflow-hidden mb-4 p-4 flex items-center justify-center">
-                    <div className="relative w-full h-full">
-                      <Image
-                        src={product.image}
-                        alt={`${product.name} packaging`}
-                        fill
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        className="object-contain group-hover:scale-108 transition-transform duration-300"
-                      />
+            {filteredProducts.map((product) => {
+              const productImages =
+                product.images && product.images.length > 0 ? product.images : [product.image];
+              const currentImgIdx = cardImageIndex[product.id] || 0;
+              const currentImg = productImages[currentImgIdx] || product.image;
+
+              return (
+                <div
+                  key={product.id}
+                  className="bg-white rounded-2xl border border-slate-200/80 hover:border-blue-300 p-5 flex flex-col justify-between card-shadow-hover group"
+                >
+                  <div>
+                    {/* Image Presentation */}
+                    <div className="relative aspect-[4/3] bg-[#F5F8FC] rounded-xl overflow-hidden mb-4 p-4 flex items-center justify-center">
+                      <div className="relative w-full h-full">
+                        <Image
+                          src={currentImg}
+                          alt={`${product.name} packaging ${currentImgIdx === 1 ? "Back" : "Front"}`}
+                          fill
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          quality={90}
+                          className="object-contain group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      {/* Grade or Range Badge */}
+                      {product.grade && (
+                        <span className="absolute top-3 right-3 bg-[#073B69] text-white text-[11px] font-black px-2.5 py-0.5 rounded-md shadow-xs">
+                          {product.grade}
+                        </span>
+                      )}
+                      {product.badge && !product.grade && (
+                        <span className="absolute top-3 right-3 bg-[#0795A5] text-white text-[10px] font-bold px-2 py-0.5 rounded-md shadow-xs">
+                          {product.badge}
+                        </span>
+                      )}
+
+                      {/* Packaging Views Toggle Pill */}
+                      {productImages.length > 1 && (
+                        <div className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-white/95 backdrop-blur-xs rounded-full p-0.5 border border-slate-200/90 shadow-xs flex items-center gap-0.5 z-10 max-w-[92%] overflow-x-auto">
+                          {productImages.map((_, imgIndex) => {
+                            const label =
+                              productImages.length === 2
+                                ? imgIndex === 0
+                                  ? "Front"
+                                  : "Back"
+                                : imgIndex === 0
+                                ? "Combo"
+                                : imgIndex === 1
+                                ? "Bag Kit"
+                                : "Bucket Kit";
+                            return (
+                              <button
+                                key={imgIndex}
+                                type="button"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  e.stopPropagation();
+                                  setCardImageIndex((prev) => ({ ...prev, [product.id]: imgIndex }));
+                                }}
+                                className={`px-2 py-0.5 rounded-full text-[10px] font-bold transition-all cursor-pointer whitespace-nowrap ${
+                                  currentImgIdx === imgIndex
+                                    ? "bg-[#073B69] text-white shadow-xs"
+                                    : "text-slate-600 hover:text-slate-900"
+                                }`}
+                              >
+                                {label}
+                              </button>
+                            );
+                          })}
+                        </div>
+                      )}
                     </div>
-                    {/* Grade or Range Badge */}
-                    {product.grade && (
-                      <span className="absolute top-3 right-3 bg-[#073B69] text-white text-[11px] font-black px-2.5 py-0.5 rounded-md shadow-xs">
-                        {product.grade}
-                      </span>
-                    )}
-                    {product.badge && !product.grade && (
-                      <span className="absolute top-3 right-3 bg-[#0795A5] text-white text-[10px] font-bold px-2 py-0.5 rounded-md shadow-xs">
-                        {product.badge}
-                      </span>
-                    )}
-                  </div>
 
                   {/* Header info */}
                   <div className="flex items-center justify-between text-[11px] text-[#0875C9] font-bold uppercase tracking-wider mb-1">
@@ -227,7 +271,8 @@ export const ProductsClient: React.FC = () => {
                   </button>
                 </div>
               </div>
-            ))}
+            );
+          })}
           </div>
         )}
       </div>

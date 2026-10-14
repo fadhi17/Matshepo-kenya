@@ -96,39 +96,6 @@ export const Navbar: React.FC = () => {
 
   return (
     <header className="sticky top-0 z-40 w-full transition-all duration-300">
-      {/* Top Utility Announcement Bar */}
-      <div className="bg-[#073B69] text-white text-[11px] md:text-xs py-1.5 px-4 hidden sm:block border-b border-white/10">
-        <div className="container-custom flex justify-between items-center">
-          <div className="flex items-center gap-6">
-            <span className="flex items-center gap-1.5 text-slate-300">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              Construction Chemicals Manufacturing • Nairobi, Kenya
-            </span>
-            <span className="hidden md:inline-block text-slate-300/60">|</span>
-            <span className="hidden md:flex items-center gap-1.5 text-slate-300">
-              <ShieldCheck className="w-3.5 h-3.5 text-[#FFC400]" />
-              10-Year Waterproofing Project Guarantee
-            </span>
-          </div>
-          <div className="flex items-center gap-5">
-            <a
-              href="tel:+254757775555"
-              className="flex items-center gap-1.5 hover:text-[#FFC400] transition-colors"
-            >
-              <Phone className="w-3 h-3 text-[#FFC400]" />
-              <span>0757 775 555</span>
-            </a>
-            <a
-              href="mailto:simba@matshepo.com"
-              className="flex items-center gap-1.5 hover:text-[#FFC400] transition-colors"
-            >
-              <Mail className="w-3 h-3 text-[#FFC400]" />
-              <span>simba@matshepo.com</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
       {/* Main Navbar */}
       <nav
         className={`w-full transition-all duration-300 ${

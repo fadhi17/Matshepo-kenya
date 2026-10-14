@@ -5,7 +5,6 @@ import { CategoryCards } from "@/components/home/CategoryCards";
 import { WaterproofingBanner } from "@/components/home/WaterproofingBanner";
 import { FeaturedProducts } from "@/components/home/FeaturedProducts";
 import { QualitySection } from "@/components/home/QualitySection";
-import { HomeBlogSection } from "@/components/home/HomeBlogSection";
 import { AboutPreview } from "@/components/home/AboutPreview";
 import { QuoteSection } from "@/components/home/QuoteSection";
 
@@ -19,7 +18,6 @@ export default function HomePage() {
       <WaterproofingBanner />
       <FeaturedProducts />
       <QualitySection />
-      <HomeBlogSection />
       <AboutPreview />
       <QuoteSection />
     </>

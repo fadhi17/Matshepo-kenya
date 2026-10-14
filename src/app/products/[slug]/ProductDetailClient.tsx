@@ -25,6 +25,10 @@ interface Props {
 export const ProductDetailClient: React.FC<Props> = ({ product }) => {
   const { openQuoteModal } = useQuote();
 
+  const productImages =
+    product.images && product.images.length > 0 ? product.images : [product.image];
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
+
   // Selected packaging or variant
   const [selectedPackagingIndex, setSelectedPackagingIndex] = useState(0);
   const [selectedVariant, setSelectedVariant] = useState(
@@ -67,12 +71,13 @@ export const ProductDetailClient: React.FC<Props> = ({ product }) => {
               <div className="relative aspect-square bg-[#F5F8FC] rounded-2xl overflow-hidden p-6 border border-slate-200/60 flex items-center justify-center">
                 <div className="relative w-full h-full">
                   <Image
-                    src={product.image}
-                    alt={`${product.name} packaging`}
+                    src={productImages[activeImageIndex] || product.image}
+                    alt={`${product.name} packaging view`}
                     fill
                     priority
                     sizes="(max-width: 1024px) 100vw, 450px"
-                    className="object-contain"
+                    quality={95}
+                    className="object-contain transition-all duration-300"
                   />
                 </div>
                 {product.grade && (
@@ -85,7 +90,85 @@ export const ProductDetailClient: React.FC<Props> = ({ product }) => {
                     {product.badge}
                   </span>
                 )}
+                {productImages.length > 1 && (
+                  <span className="absolute bottom-3 right-3 bg-white/90 backdrop-blur-xs text-[#073B69] text-[10px] font-bold px-2 py-0.5 rounded-md border border-slate-200 shadow-xs">
+                    {productImages.length === 2
+                      ? activeImageIndex === 0
+                        ? "Front View"
+                        : "Back View (Specs)"
+                      : activeImageIndex === 0
+                      ? "Complete System Combo"
+                      : activeImageIndex === 1
+                      ? "Bag & Liquid Kit"
+                      : "Bucket & Liquid Kit"}
+                  </span>
+                )}
               </div>
+
+              {/* Multi-angle / Multi-component packaging gallery */}
+              {productImages.length > 1 && (
+                <div
+                  className={`grid gap-3 ${
+                    productImages.length === 2 ? "grid-cols-2" : "grid-cols-1 sm:grid-cols-3"
+                  }`}
+                >
+                  {productImages.map((img, idx) => {
+                    const title =
+                      productImages.length === 2
+                        ? idx === 0
+                          ? "Front Packaging"
+                          : "Back Packaging"
+                        : idx === 0
+                        ? "Complete System"
+                        : idx === 1
+                        ? "Bag Kit"
+                        : "Bucket Kit";
+
+                    const subtitle =
+                      productImages.length === 2
+                        ? idx === 0
+                          ? "Brand & features"
+                          : "Mixing & specs"
+                        : idx === 0
+                        ? "Bag + Bucket + Liquid"
+                        : idx === 1
+                        ? "20kg Bag + Liquid"
+                        : "20kg Bucket + Liquid";
+
+                    return (
+                      <button
+                        key={idx}
+                        type="button"
+                        onClick={() => setActiveImageIndex(idx)}
+                        className={`p-2.5 rounded-xl border-2 transition-all cursor-pointer flex items-center gap-3 ${
+                          activeImageIndex === idx
+                            ? "border-[#0875C9] bg-blue-50/50 shadow-xs ring-1 ring-[#0875C9]/20"
+                            : "border-slate-200 bg-white hover:border-slate-300"
+                        }`}
+                      >
+                        <div className="relative w-12 h-14 shrink-0 bg-[#F5F8FC] rounded-lg overflow-hidden p-1">
+                          <Image
+                            src={img}
+                            alt={`${product.name} view ${title}`}
+                            fill
+                            sizes="50px"
+                            quality={90}
+                            className="object-contain"
+                          />
+                        </div>
+                        <div className="text-left">
+                          <span className="block text-xs font-bold text-[#172333]">
+                            {title}
+                          </span>
+                          <span className="text-[10px] text-slate-500 block">
+                            {subtitle}
+                          </span>
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
 
               {/* Verified Product Packaging Note */}
               <div className="p-3 bg-blue-50/60 rounded-xl border border-blue-100 text-[11px] text-slate-600 flex items-center gap-2">

@@ -9,7 +9,6 @@ import {
   Phone,
   Mail,
   MapPin,
-  Clock,
   ArrowRight,
   Shield,
 } from "lucide-react";
@@ -228,10 +227,6 @@ export const Footer: React.FC = () => {
                 >
                   {companyData.email}
                 </a>
-              </div>
-              <div className="flex items-start gap-2.5 text-xs text-slate-400">
-                <Clock className="w-4 h-4 text-[#0795A5] shrink-0 mt-0.5" />
-                <span>{companyData.businessHours}</span>
               </div>
               <div className="pt-2">
                 <button

@@ -8,31 +8,31 @@ export const CategoryCards: React.FC = () => {
     {
       title: "Tile Adhesives",
       slug: "Tile Adhesives",
-      image: "/assets/products/cat_tile_adhesives.jpg",
+      image: "/assets/products/tile_adhesives_all_five.png",
       count: "5 Products",
     },
     {
       title: "Waterproofing",
       slug: "Waterproofing",
-      image: "/assets/products/cat_waterproofing.jpg",
-      count: "2 Systems",
+      image: "/assets/products/ultraguard_combo.png",
+      count: "Ultraguard 2K & APP",
     },
     {
       title: "Grout",
       slug: "Grout",
-      image: "/assets/products/cat_grout.jpg",
+      image: "/assets/products/tile_lit_hd.png",
       count: "Tile Lit Waterproof",
     },
     {
       title: "Plaster",
       slug: "Plaster",
-      image: "/assets/products/cat_plaster.jpg",
+      image: "/assets/products/express_plaster_hd.png",
       count: "Express Plaster",
     },
     {
       title: "Flooring",
       slug: "Flooring",
-      image: "/assets/products/cat_flooring.jpg",
+      image: "/assets/products/cemora_hd.png",
       count: "Cemora Microcement",
     },
   ];
@@ -69,13 +69,21 @@ export const CategoryCards: React.FC = () => {
               href={`/products?category=${encodeURIComponent(cat.slug)}`}
               className="group block bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-xl border border-slate-200/80 hover:border-blue-200 transition-all duration-300"
             >
-              <div className="relative aspect-[4/3] bg-slate-100 overflow-hidden">
+              <div className="relative aspect-[4/3] bg-[#F5F8FC] overflow-hidden flex items-center justify-center">
                 <Image
                   src={cat.image}
                   alt={cat.title}
                   fill
                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
-                  className="object-cover group-hover:scale-108 transition-transform duration-500"
+                  className={
+                    cat.slug === "Grout" ||
+                    cat.slug === "Plaster" ||
+                    cat.slug === "Flooring" ||
+                    cat.slug === "Tile Adhesives" ||
+                    cat.slug === "Waterproofing"
+                      ? "object-contain p-2 group-hover:scale-108 transition-transform duration-500"
+                      : "object-cover group-hover:scale-108 transition-transform duration-500"
+                  }
                 />
               </div>
               <div className="p-4 flex items-center justify-between">
