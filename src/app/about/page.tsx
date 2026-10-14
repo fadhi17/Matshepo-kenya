@@ -165,49 +165,37 @@ export default function AboutPage() {
 
         {/* Section E: Manufacturing Approach */}
         <section className="bg-gradient-to-br from-[#073B69] to-[#05294A] text-white rounded-3xl p-8 sm:p-12 shadow-lg">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            <div className="lg:col-span-6 space-y-4">
-              <span className="text-xs font-black uppercase tracking-wider text-[#FFC400]">
-                Production & Precision
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-black tracking-tight">
-                Our Manufacturing Approach
-              </h2>
-              <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
-                Operating modern manufacturing facilities in Nairobi, Matshepo Africa adheres to disciplined production workflows designed to produce reliable construction chemical batches.
-              </p>
-              <div className="space-y-2.5 pt-2">
-                <div className="flex items-start gap-2.5 text-xs text-slate-200">
-                  <CheckCircle className="w-4 h-4 text-[#FFC400] shrink-0 mt-0.5" />
-                  <span><strong>Graded Raw Material Sourcing:</strong> High-grade silica sands, hydraulic cements, and specialized polymer additives.</span>
-                </div>
-                <div className="flex items-start gap-2.5 text-xs text-slate-200">
-                  <CheckCircle className="w-4 h-4 text-[#FFC400] shrink-0 mt-0.5" />
-                  <span><strong>Homogeneous Batch Blending:</strong> Automated dry-mixing ensuring uniform dispersion of chemical admixtures.</span>
-                </div>
-                <div className="flex items-start gap-2.5 text-xs text-slate-200">
-                  <CheckCircle className="w-4 h-4 text-[#FFC400] shrink-0 mt-0.5" />
-                  <span><strong>Protective Sealed Packaging:</strong> Multi-ply moisture-resistant packaging preventing premature hydration.</span>
-                </div>
+          <div className="max-w-4xl space-y-4">
+            <span className="text-xs font-black uppercase tracking-wider text-[#FFC400]">
+              Production & Precision
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-black tracking-tight">
+              Our Manufacturing Approach
+            </h2>
+            <p className="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-2xl">
+              Operating modern manufacturing facilities in Nairobi, Matshepo Africa adheres to disciplined production workflows designed to produce reliable construction chemical batches.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4">
+              <div className="bg-white/5 border border-white/10 rounded-2xl p-5 hover:bg-white/10 transition-colors">
+                <CheckCircle className="w-5 h-5 text-[#FFC400] mb-2.5" />
+                <h3 className="text-sm font-bold text-white mb-1.5">Graded Raw Material Sourcing</h3>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  High-grade silica sands, hydraulic cements, and specialized polymer additives.
+                </p>
               </div>
-            </div>
-
-            <div className="lg:col-span-6 grid grid-cols-2 gap-4">
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-slate-800">
-                <Image
-                  src="/assets/products/cat_tile_adhesives.jpg"
-                  alt="Quality Application"
-                  fill
-                  className="object-cover"
-                />
+              <div className="bg-white/5 border border-white/10 rounded-2xl p-5 hover:bg-white/10 transition-colors">
+                <CheckCircle className="w-5 h-5 text-[#FFC400] mb-2.5" />
+                <h3 className="text-sm font-bold text-white mb-1.5">Homogeneous Batch Blending</h3>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Automated dry-mixing ensuring uniform dispersion of chemical admixtures.
+                </p>
               </div>
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-slate-800">
-                <Image
-                  src="/assets/products/cat_waterproofing.jpg"
-                  alt="Waterproofing Development"
-                  fill
-                  className="object-cover"
-                />
+              <div className="bg-white/5 border border-white/10 rounded-2xl p-5 hover:bg-white/10 transition-colors">
+                <CheckCircle className="w-5 h-5 text-[#FFC400] mb-2.5" />
+                <h3 className="text-sm font-bold text-white mb-1.5">Protective Sealed Packaging</h3>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Multi-ply moisture-resistant packaging preventing premature hydration.
+                </p>
               </div>
             </div>
           </div>
