@@ -191,7 +191,7 @@ export const ProductDetailClient: React.FC<Props> = ({ product }) => {
                 </p>
               </div>
 
-              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed whitespace-pre-line">
                 {product.fullDescription}
               </p>
 

@@ -7,6 +7,7 @@ import {
   ShieldCheck,
   Award,
   Sparkles,
+  Globe,
 } from "lucide-react";
 
 export const Hero: React.FC = () => {
@@ -26,8 +27,8 @@ export const Hero: React.FC = () => {
           {/* Main Headline */}
           <div className="space-y-2">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#073B69] tracking-tight leading-[1.08]">
-              STRONGER BONDS. <br />
-              <span className="text-[#0875C9]">LASTING PROTECTION.</span>
+              SOME BONDS <br />
+              <span className="text-[#0875C9]">ARE FOREVER.</span>
             </h1>
             <p className="text-lg sm:text-xl font-bold text-[#172333] pt-1">
               Advanced Construction Chemicals for Stronger, More Durable Buildings.
@@ -36,7 +37,7 @@ export const Hero: React.FC = () => {
 
           {/* Supporting Description */}
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl">
-            From high-performance tile adhesives to reliable waterproofing systems, Matshepo Africa delivers quality construction solutions designed for modern building projects across residential, commercial, and industrial developments.
+            From high-performance tile adhesives to plasters & flooring systems and reliable waterproofing systems, Matshepo Africa delivers quality construction solutions designed for modern building projects across residential, commercial, and industrial developments.
           </p>
 
           {/* Primary & Secondary Action Buttons */}
@@ -57,25 +58,31 @@ export const Hero: React.FC = () => {
             </Link>
           </div>
 
-          {/* Three Trust Badges */}
-          <div className="pt-6 border-t border-slate-200/80 grid grid-cols-1 sm:grid-cols-3 gap-3.5 max-w-2xl">
+          {/* Four Trust Badges */}
+          <div className="pt-6 border-t border-slate-200/80 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 max-w-4xl">
             <div className="flex items-center gap-2.5 text-xs text-slate-700 font-semibold bg-white/80 p-3 rounded-xl border border-slate-100 shadow-xs">
               <div className="w-7 h-7 rounded-lg bg-blue-50 text-[#0875C9] flex items-center justify-center shrink-0">
+                <Globe className="w-4 h-4" />
+              </div>
+              <span className="leading-tight">International Quality Standards</span>
+            </div>
+            <div className="flex items-center gap-2.5 text-xs text-slate-700 font-semibold bg-white/80 p-3 rounded-xl border border-slate-100 shadow-xs">
+              <div className="w-7 h-7 rounded-lg bg-sky-50 text-[#073B69] flex items-center justify-center shrink-0">
                 <ShieldCheck className="w-4 h-4" />
               </div>
-              <span>Durable Performance</span>
+              <span className="leading-tight">Exceptional Durability</span>
             </div>
             <div className="flex items-center gap-2.5 text-xs text-slate-700 font-semibold bg-white/80 p-3 rounded-xl border border-slate-100 shadow-xs">
               <div className="w-7 h-7 rounded-lg bg-teal-50 text-[#0795A5] flex items-center justify-center shrink-0">
                 <Sparkles className="w-4 h-4" />
               </div>
-              <span>Sustainable Solutions</span>
+              <span className="leading-tight">Sustainable Solutions</span>
             </div>
             <div className="flex items-center gap-2.5 text-xs text-slate-700 font-semibold bg-white/80 p-3 rounded-xl border border-slate-100 shadow-xs">
               <div className="w-7 h-7 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center shrink-0">
                 <Award className="w-4 h-4" />
               </div>
-              <span>Trusted by Professionals</span>
+              <span className="leading-tight">Trusted by Professionals</span>
             </div>
           </div>
         </div>

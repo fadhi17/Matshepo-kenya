@@ -15,7 +15,7 @@ export const WelcomeSection: React.FC = () => {
           {/* Paragraphs */}
           <div className="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed">
             <p>
-              Matshepo Africa is one of the leading building material manufacturers for the widest range of tile adhesive, grout and water proofing in East Africa. The company&apos;s regional position is a result of its strong commitment to sustainable development through offering environment friendly products and developing special products using the latest available technology.
+              Matshepo Africa is one of the leading building material manufacturers for the widest range of Graded and Economy Tile Adhesives, Waterproofing Solutions, Plasters, Flooring Systems and Grouting. The company&apos;s regional position is a result of its strong commitment to sustainable development through offering environment friendly products and developing special products using the latest available technology.
             </p>
             <p>
               We aim to ease the work of the installer, improve the durability of the building and create lasting customer relationships. We do this by manufacturing safe innovative building materials.

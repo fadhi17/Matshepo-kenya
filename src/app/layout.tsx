@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Matshepo Africa Ltd | Stronger Bonds. Lasting Protection.",
+    title: "Matshepo Africa Ltd | Some Bonds are Forever",
     description: "Quality construction chemicals manufacturing and professional waterproofing services in Nairobi, Kenya.",
   },
 };

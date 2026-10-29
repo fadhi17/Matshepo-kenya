@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "About Us | Building Trust Through Quality",
+  title: "About Us | Some Bonds are Forever",
   description:
     "Matshepo Africa Ltd is a construction chemicals manufacturer based in Nairobi, Kenya, delivering solutions for tile installation, waterproofing, grouting, plastering, and flooring.",
 };
@@ -45,8 +45,8 @@ export default function AboutPage() {
           <span className="text-xs font-black uppercase tracking-widest text-[#FFC400]">
             About Matshepo Africa Ltd
           </span>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight">
-            BUILDING TRUST THROUGH QUALITY
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight uppercase">
+            SOME BONDS ARE FOREVER
           </h1>
           <p className="text-slate-200 text-xs sm:text-sm md:text-base leading-relaxed">
             Manufacturing practical, high-performance construction chemicals in Nairobi, Kenya to support contractors, builders, developers, and distributors.
@@ -75,7 +75,7 @@ export default function AboutPage() {
                 Empowering Kenya&apos;s Modern Construction Sector
               </h2>
               <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                Matshepo Africa Ltd is a construction chemicals manufacturer based in Nairobi, Kenya, providing solutions for tile installation, waterproofing, grouting, plastering, and flooring applications.
+                Matshepo Africa Ltd is a construction chemicals manufacturer based in Nairobi, Kenya, providing solutions for tile installation, waterproofing, grouting, plastering, and flooring systems.
               </p>
               <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                 Our focus is on developing practical construction chemical solutions that support reliable installation, durable building surfaces, and long-lasting performance.
@@ -85,7 +85,7 @@ export default function AboutPage() {
               </p>
               <div className="pt-2 flex items-center gap-2 text-xs font-bold text-[#073B69]">
                 <MapPin className="w-4 h-4 text-[#0875C9]" />
-                <span>Manufacturing & Distribution: Athi SS Business Park, Nairobi, Kenya</span>
+                <span>Manufacturing & Distribution: Athi 55 Business Park, Nairobi, Kenya</span>
               </div>
             </div>
 

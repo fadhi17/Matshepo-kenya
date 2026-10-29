@@ -206,7 +206,7 @@ export const ContactClient: React.FC = () => {
                 <span>Nairobi Manufacturing Facility</span>
               </div>
               <p className="text-[11px] leading-relaxed">
-                Located conveniently at Athi SS Business Park in Mlolongo, Athi River corridor, providing fast logistical dispatch to Nairobi, Machakos, Kiambu, and regional sites.
+                Located conveniently at Athi 55 Business Park in Mlolongo, Athi River corridor, providing fast logistical dispatch to Nairobi, Machakos, Kiambu, and regional sites.
               </p>
             </div>
           </div>

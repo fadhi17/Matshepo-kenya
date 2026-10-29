@@ -44,7 +44,7 @@ export const servicesData: WaterproofingService[] = [
     shortDescription:
       "Appropriate waterproofing systems for below-ground structures to prevent water seepage, moisture rising, and structural degradation.",
     fullDescription:
-      "Below-ground structures require robust protection against subterranean water ingress, lateral earth pressure, and rising damp. We provide comprehensive tanking solutions combining Insutech APP Membrane systems with crystalline and cementitious protective barriers to safeguard basements, underground car parks, and foundations.",
+      "Below-ground structures require robust protection against subterranean water ingress, lateral earth pressure, and rising damp. We provide comprehensive tanking solutions combining APP Membrane systems with crystalline and cementitious protective barriers to safeguard basements, underground car parks, and foundations.",
     image: "/assets/projects/project_basement.jpg",
     applications: [
       "Commercial basement parking levels",
@@ -53,7 +53,7 @@ export const servicesData: WaterproofingService[] = [
       "Foundation grade beams and footings",
     ],
     recommendedSystems: [
-      "Insutech APP Modified Bitumen Torch-Applied Membrane",
+      "APP Modified Bitumen Torch-Applied Membrane",
       "Ultraguard 2K Cementitious Negative-Side Barrier",
       "Sub-structure drainage and perimeter joint seals",
     ],
@@ -79,7 +79,7 @@ export const servicesData: WaterproofingService[] = [
       "Gutters, parapets, and rainwater outlets",
     ],
     recommendedSystems: [
-      "Insutech APP Membrane with UV-protective finish",
+      "APP Membrane with UV-protective finish",
       "Ultraguard 2K High-Flexibility Cementitious Layer",
       "Reinforced corner fillets and expansion joint detailing",
     ],

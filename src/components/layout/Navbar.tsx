@@ -67,9 +67,9 @@ export const Navbar: React.FC = () => {
     {
       name: "Waterproofing",
       slug: "waterproofing",
-      desc: "Ultraguard 2K cementitious & Insutech APP membranes",
+      desc: "Ultraguard 2K cementitious & APP membranes",
       icon: Droplets,
-      items: ["Ultraguard (25kg & 30kg)", "Insutech APP Membrane"],
+      items: ["Ultraguard (25kg & 30kg)", "APP Membrane"],
     },
     {
       name: "Grout",

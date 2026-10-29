@@ -32,7 +32,7 @@ export const projectsData: ProjectItem[] = [
     fullDetails:
       "A multi-level commercial development in Nairobi required robust basement tanking to prevent lateral ground moisture and high water table infiltration. Matshepo Africa delivered engineered waterproofing solutions covering retaining walls, construction joints, and basement slabs.",
     image: "/assets/projects/project_basement.jpg",
-    systemsUsed: ["Insutech APP Waterproofing Membrane", "Ultraguard 2K Heavy Duty", "Perimeter Hydrophobic Sealants"],
+    systemsUsed: ["APP Waterproofing Membrane", "Ultraguard 2K Heavy Duty", "Perimeter Hydrophobic Sealants"],
     scope: "1,200 m² multi-level underground parking and foundation walls.",
   },
   {
@@ -44,7 +44,7 @@ export const projectsData: ProjectItem[] = [
     fullDetails:
       "A premium residential apartment complex in Nairobi required full roof rehabilitation to eliminate chronic monsoon season leaks. The installation incorporated proper surface slope correction, fillet detailing, and multi-layer UV-stable waterproofing with a 10-year project guarantee.",
     image: "/assets/projects/project_rooftop.jpg",
-    systemsUsed: ["Insutech APP 4mm Mineral Membrane", "Ultraguard 2K Parapet Seal", "Express Plaster Slope Correction"],
+    systemsUsed: ["APP 4mm Mineral Membrane", "Ultraguard 2K Parapet Seal", "Express Plaster Slope Correction"],
     scope: "850 m² exposed roof terrace and utility penthouse slabs.",
   },
   {

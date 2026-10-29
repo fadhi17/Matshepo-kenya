@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
           <div className="space-y-4">
             <Logo variant="dark" size="lg" />
             <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
-              Matshepo Africa Ltd delivers construction chemical solutions for tile installation, waterproofing, plastering, grouting, and flooring applications.
+              Matshepo Africa Ltd delivers construction chemical solutions for tile installation, waterproofing, plastering, grouting, and flooring systems.
             </p>
             <div className="flex items-center gap-3 pt-2">
               {/* Facebook */}

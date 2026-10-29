@@ -273,11 +273,11 @@ export const productsData: Product[] = [
     shortDescription:
       "Two-component polymer-modified cementitious waterproofing system for robust positive and negative water barrier protection.",
     fullDescription:
-      "Ultraguard is a premium two-component (2K) polymer-modified cementitious waterproofing system engineered to form a robust, flexible, seamless waterproof barrier on concrete and masonry structures. Consisting of a specially formulated powder blend (available in 20kg moisture-resistant sack or protective bucket) and an advanced liquid polymer jerrican, Ultraguard seals capillaries and resists positive and negative hydrostatic water pressure.",
+      "Ultraguard is a premium two-component (2K) polymer-modified cementitious waterproofing system engineered to form a robust, flexible, seamless waterproof barrier on concrete and masonry structures. Consisting of a specially formulated powder blend (available in 20kg moisture-resistant sack) and an advanced liquid polymer jerrican, Ultraguard seals capillaries and resists positive and negative hydrostatic water pressure.",
     keyFeatures: [
       "Two-component (2K) polymer-modified cementitious waterproofing system",
       "Available in 25 Kg Kit (20 Kg Powder + 5 Kg Liquid) & 30 Kg Kit (20 Kg Powder + 10 Kg Liquid)",
-      "Powder available in both 20 Kg multi-ply bag and 20 Kg heavy-duty bucket packaging",
+      "Powder available in 20 Kg multi-ply moisture-resistant bag packaging",
       "Seamless and monolithic water barrier protection for positive & negative pressure",
       "Excellent bonding to damp or dry concrete substrates with long-term flexibility",
       "Core system for Matshepo Africa's 10-Year Waterproofing Guarantee",
@@ -299,21 +299,16 @@ export const productsData: Product[] = [
         label: "25 Kg Kit",
         weight: "25 Kg (20 Kg Powder + 5 Kg Liquid)",
         breakdown: "20 Kg Powder + 5 Kg Liquid",
-        details: "Supplied as 20 Kg powder (bag or bucket) + 5 Kg liquid polymer container",
+        details: "Supplied as 20 Kg powder bag + 5 Kg liquid polymer container",
       },
       {
         label: "30 Kg Kit",
         weight: "30 Kg (20 Kg Powder + 10 Kg Liquid)",
         breakdown: "20 Kg Powder + 10 Kg Liquid",
-        details: "Supplied as 20 Kg powder (bag or bucket) + 10 Kg liquid polymer container for enhanced elongation & flexibility",
+        details: "Supplied as 20 Kg powder bag + 10 Kg liquid polymer container for enhanced elongation & flexibility",
       },
     ],
-    image: "/assets/products/ultraguard_combo.png",
-    images: [
-      "/assets/products/ultraguard_combo.png",
-      "/assets/products/ultraguard_bag_combo.png",
-      "/assets/products/ultraguard_bucket_combo.png",
-    ],
+    image: "/assets/products/ultraguard_combo_t.png",
     badge: "2K Waterproofing",
     tdsAvailable: false,
     sdsAvailable: false,
@@ -322,17 +317,17 @@ export const productsData: Product[] = [
       "Ultraguard 2K cementitious waterproofing system by Matshepo Africa Ltd. Packaging: 25 Kg (20 Kg Powder + 5 Kg Liquid) & 30 Kg (20 Kg Powder + 10 Kg Liquid) in Nairobi, Kenya.",
   },
 
-  // 7. Insutech APP Membrane
+  // 7. APP Membrane
   {
-    id: "insutech-app-membrane",
-    slug: "insutech-app-membrane",
-    name: "Insutech APP Membrane",
+    id: "app-membrane",
+    slug: "app-membrane",
+    name: "APP Membrane",
     category: "Waterproofing",
     subtitle: "APP Modified Bituminous Waterproofing Membrane",
     shortDescription:
       "APP membrane waterproofing solution for suitable building waterproofing applications.",
     fullDescription:
-      "Insutech APP Membrane is a heavy-duty Atactic Polypropylene (APP) modified bitumen waterproofing membrane reinforced with non-woven spunbond polyester. Engineered for exceptional tensile strength, thermal stability under harsh sunlight, and superior puncture resistance, it provides long-lasting waterproofing for major commercial, industrial, and civil construction projects.",
+      "APP Membrane is a heavy-duty Atactic Polypropylene (APP) modified bitumen waterproofing membrane reinforced with non-woven spunbond polyester. Engineered for exceptional tensile strength, thermal stability under harsh sunlight, and superior puncture resistance, it provides long-lasting waterproofing for major commercial, industrial, and civil construction projects.",
     keyFeatures: [
       "High-grade APP polymer-modified bitumen formulation",
       "Reinforced polyester core for high tensile strength & elongation",
@@ -362,9 +357,9 @@ export const productsData: Product[] = [
     badge: "Membrane System",
     tdsAvailable: false,
     sdsAvailable: false,
-    seoTitle: "Insutech APP Waterproofing Membrane | Matshepo Africa",
+    seoTitle: "APP Waterproofing Membrane | Matshepo Africa",
     seoDescription:
-      "Insutech APP Membrane by Matshepo Africa Ltd. Torch-applied APP modified bitumen waterproofing membrane for rooftops and basements in Kenya.",
+      "APP Membrane by Matshepo Africa Ltd. Torch-applied APP modified bitumen waterproofing membrane for rooftops and basements in Kenya.",
   },
 
   // 8. Tile Lit
@@ -423,10 +418,11 @@ export const productsData: Product[] = [
     shortDescription:
       "Express Plaster 888 is a polymer-modified high-performance ready-mix plastering compound designed for fast, smooth, and durable wall finishing.",
     fullDescription:
-      "Express Plaster 888 is a factory-blended ready-mix cementitious plaster engineered to replace traditional, inconsistent site-mixed sand and cement. Consisting of graded aggregates, high-grade Portland cement, and specialized workability polymers, it delivers smooth application, consistent bonding, and reduced rebound loss for fast, reliable wall finishing on interior and exterior walls.",
+      "Express Plaster 888 is a factory-blended ready-mix cementitious plaster engineered to replace traditional, inconsistent site-mixed sand and cement. Consisting of graded aggregates, high-grade Portland cement, and specialized workability polymers, it delivers smooth application, consistent bonding, and reduced rebound loss for fast, reliable wall finishing on interior and exterior walls.\n\nExpress Plaster is designed for fast and efficient wall plastering and can be applied using a suitable compressor-powered plaster spraying machine for faster application, reduced manual effort and improved productivity on construction sites.",
     keyFeatures: [
       "High performance ready-mix plastering solution",
       "Polymer-modified compound for fast, smooth, and durable wall finishing",
+      "Machine-sprayable with compressor-powered plaster machines or manual trowel application",
       "Factory pre-blended for guaranteed consistent batch quality",
       "Superior adhesion to masonry, clay bricks, and concrete blocks",
       "Net weight 25 kg protective moisture-resistant packaging made in Kenya",
@@ -466,9 +462,9 @@ export const productsData: Product[] = [
     range: "The Art of Microcement Flooring",
     subtitle: "Microcement Flooring",
     shortDescription:
-      "Cemora is an architectural microcement flooring system engineered to create seamless, joint-free tactile concrete surfaces for luxury modern interiors.",
+      "Cemora is a living surface. Hand-applied by master craftsmen, its natural movement and mineral variations ensure that no two floors are identical. You are laying down a piece of history.",
     fullDescription:
-      "Cemora is an architectural microcement flooring and surface coating system engineered for luxury modern interiors. Creating seamless, joint-free tactile concrete aesthetics, Cemora provides architects, designers, and property owners with a sophisticated continuous finish across floors, walls, and bespoke features with excellent durability and contemporary elegance.",
+      "Cemora is a living surface. Hand-applied by master craftsmen, its natural movement and mineral variations ensure that no two floors are identical. You are laying down a piece of history.",
     keyFeatures: [
       "The Art of Microcement Flooring for modern architectural spaces",
       "Continuous, seamless living surface with natural mineral variations",

@@ -45,7 +45,7 @@ export const AboutPreview: React.FC = () => {
               <span className="text-[#0875C9]">Built for the Future.</span>
             </h2>
             <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-              Matshepo Africa Ltd is a construction chemicals manufacturer based in Nairobi, Kenya, providing solutions for tile installation, waterproofing, grouting, plastering and flooring applications.
+              Matshepo Africa Ltd is a construction chemicals manufacturer based in Nairobi, Kenya, providing solutions for tile installation, waterproofing, grouting, plastering and flooring systems.
             </p>
             <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
               Our focus is on quality, innovation and customer satisfaction, supporting durable and reliable building structures across residential and commercial developments.

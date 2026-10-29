@@ -178,7 +178,7 @@ export const blogPostsData: BlogPost[] = [
       {
         sectionHeading: "External vs. Internal Tanking Solutions",
         paragraphs: [
-          "The ideal time to protect a basement is during construction via external tanking using heavy-duty torch-applied membranes such as Insutech APP Membrane.",
+          "The ideal time to protect a basement is during construction via external tanking using heavy-duty torch-applied membranes such as APP Membrane.",
           "For existing structures or areas where external excavation is prohibited, internal cementitious waterproofing with Ultraguard 2K creates a crystalline-assisted barrier capable of resisting negative-side water pressure.",
         ],
       },

@@ -18,7 +18,9 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const product = productsData.find((p) => p.slug === slug);
+  const product = productsData.find(
+    (p) => p.slug === slug || (slug === "insutech-app-membrane" && p.slug === "app-membrane")
+  );
 
   if (!product) {
     return {
@@ -38,7 +40,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function ProductDetailPage({ params }: Props) {
   const { slug } = await params;
-  const product = productsData.find((p) => p.slug === slug);
+  const product = productsData.find(
+    (p) => p.slug === slug || (slug === "insutech-app-membrane" && p.slug === "app-membrane")
+  );
 
   if (!product) {
     notFound();

@@ -17,7 +17,7 @@ export const FeaturedProducts: React.FC = () => {
     "tile-lit",
     "express-plaster",
     "cemora",
-    "ultraguard-2k",
+    "ultraguard",
     "simba-grip-818",
     "grip-master-plus",
     "grip-master",

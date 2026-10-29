@@ -14,7 +14,7 @@ export const CategoryCards: React.FC = () => {
     {
       title: "Waterproofing",
       slug: "Waterproofing",
-      image: "/assets/products/ultraguard_combo.png",
+      image: "/assets/products/ultraguard_combo_t.png",
       count: "Ultraguard 2K & APP",
     },
     {
