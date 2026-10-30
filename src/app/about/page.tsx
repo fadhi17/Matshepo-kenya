@@ -11,6 +11,7 @@ import {
   Factory,
   ArrowRight,
   MapPin,
+  Sparkles,
 } from "lucide-react";
 
 export const metadata = {
@@ -102,37 +103,176 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Section B & C: Mission & Vision */}
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Mission */}
-          <div className="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm flex flex-col justify-between">
-            <div className="space-y-4">
-              <div className="w-12 h-12 rounded-2xl bg-blue-50 text-[#0875C9] flex items-center justify-center">
-                <Target className="w-6 h-6" />
-              </div>
-              <h3 className="text-xl font-black text-[#073B69]">Our Mission</h3>
-              <p className="text-slate-700 text-sm leading-relaxed font-medium">
-                &ldquo;To deliver dependable construction chemical solutions that support quality workmanship and durable buildings.&rdquo;
-              </p>
-            </div>
-            <div className="mt-6 pt-4 border-t border-slate-100 text-xs text-slate-500">
-              Anchored on consistent product quality and honest contractor support.
-            </div>
+        {/* Section: Co-Founders Heading & Profiles */}
+        <section className="space-y-8">
+          <div className="text-center max-w-2xl mx-auto">
+            <span className="text-xs font-black uppercase tracking-wider text-[#0875C9]">
+              Leadership &amp; Vision
+            </span>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#073B69] tracking-tight uppercase mt-1">
+              CO-FOUNDERS
+            </h2>
+            <div className="w-16 h-1 bg-[#FFC400] rounded-full mx-auto mt-2.5 mb-3" />
+            <p className="text-xs sm:text-sm text-slate-600">
+              The visionary leadership driving sustainable manufacturing, regional industrial growth, and durable building solutions across Africa.
+            </p>
           </div>
 
-          {/* Vision */}
-          <div className="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm flex flex-col justify-between">
-            <div className="space-y-4">
-              <div className="w-12 h-12 rounded-2xl bg-teal-50 text-[#0795A5] flex items-center justify-center">
-                <Eye className="w-6 h-6" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+            {/* Co-Founder 1: Shery Yohannan */}
+            <div className="bg-white rounded-2xl p-5 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center group">
+              <div className="relative w-full max-w-[240px] aspect-[4/5] rounded-xl overflow-hidden bg-slate-900 mb-4 shadow-sm border border-slate-100 mx-auto">
+                <Image
+                  src="/assets/about/shery_yohannan_cofounder.jpeg"
+                  alt="Shery Yohannan - Co-Founder & Director of Matshepo Africa"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 240px"
+                  className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  priority
+                />
               </div>
-              <h3 className="text-xl font-black text-[#073B69]">Our Vision</h3>
-              <p className="text-slate-700 text-sm leading-relaxed font-medium">
-                &ldquo;To become a trusted construction chemicals brand recognised for product performance, innovation, and customer service.&rdquo;
-              </p>
+
+              <div className="space-y-1">
+                <h3 className="text-lg sm:text-xl font-black text-[#073B69] tracking-tight">
+                  Shery Yohannan
+                </h3>
+                <span className="text-xs font-bold uppercase tracking-wider text-[#0875C9] block">
+                  Co-Founder &amp; Director
+                </span>
+              </div>
             </div>
-            <div className="mt-6 pt-4 border-t border-slate-100 text-xs text-slate-500">
-              Serving residential, commercial, and infrastructure builds across the region.
+
+            {/* Co-Founder 2: Mathews Thomas Pulickal */}
+            <div className="bg-white rounded-2xl p-5 border border-slate-200/90 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center group">
+              <div className="relative w-full max-w-[240px] aspect-[4/5] rounded-xl overflow-hidden bg-slate-900 mb-4 shadow-sm border border-slate-100 mx-auto">
+                <Image
+                  src="/assets/about/mathews_thomas_cofounder.jpeg"
+                  alt="Mathews Thomas Pulickal - Co-Founder & Director of Matshepo Africa"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 240px"
+                  className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  priority
+                />
+              </div>
+
+              <div className="space-y-1">
+                <h3 className="text-lg sm:text-xl font-black text-[#073B69] tracking-tight">
+                  Mathews Thomas Pulickal
+                </h3>
+                <span className="text-xs font-bold uppercase tracking-wider text-[#0875C9] block">
+                  Co-Founder &amp; Director
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section B & C: Mission & Vision */}
+        <section className="space-y-6">
+          <div className="text-center max-w-2xl mx-auto">
+            <span className="text-xs font-black uppercase tracking-wider text-[#0875C9]">
+              Purpose &amp; Direction
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-black text-[#073B69] tracking-tight mt-1">
+              Our Vision &amp; Mission
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-600 mt-2">
+              Committed to industrial growth, technical excellence, and sustainable prosperity across Africa.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+            {/* Vision Card */}
+            <div className="relative bg-gradient-to-br from-white via-white to-sky-50/50 rounded-3xl p-8 sm:p-10 border border-slate-200/90 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow group">
+              <div className="space-y-5">
+                <div className="flex items-center justify-between">
+                  <div className="w-14 h-14 rounded-2xl bg-[#0875C9]/10 text-[#0875C9] flex items-center justify-center group-hover:scale-105 transition-transform">
+                    <Eye className="w-7 h-7" />
+                  </div>
+                  <span className="px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-wider bg-[#FFC400]/20 text-[#8F6B00] border border-[#FFC400]/40">
+                    OUR VISION
+                  </span>
+                </div>
+
+                <div>
+                  <h3 className="text-xl sm:text-2xl font-black text-[#073B69] tracking-tight mb-3">
+                    Building Africa&apos;s Industrial Future
+                  </h3>
+                  <p className="text-slate-800 text-sm sm:text-base leading-relaxed font-semibold">
+                    &ldquo;To build a stronger, more prosperous Africa through sustainable manufacturing, innovation and industrial growth—creating opportunities, empowering communities and shaping a better future for generations to come.&rdquo;
+                  </p>
+                </div>
+
+                {/* Key Focus Highlights */}
+                <div className="pt-2 flex flex-wrap gap-2">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium">
+                    <Sparkles className="w-3.5 h-3.5 text-[#0875C9]" />
+                    Sustainable Manufacturing
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium">
+                    <Sparkles className="w-3.5 h-3.5 text-[#0875C9]" />
+                    Empowering Communities
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium">
+                    <Sparkles className="w-3.5 h-3.5 text-[#0875C9]" />
+                    Generational Impact
+                  </span>
+                </div>
+              </div>
+
+              <div className="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                <span>Socio-Economic Transformation</span>
+                <span className="font-bold text-[#0875C9]">Pan-African Outlook</span>
+              </div>
+            </div>
+
+            {/* Mission Card */}
+            <div className="relative bg-gradient-to-br from-white via-white to-blue-50/50 rounded-3xl p-8 sm:p-10 border border-slate-200/90 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow group">
+              <div className="space-y-5">
+                <div className="flex items-center justify-between">
+                  <div className="w-14 h-14 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center group-hover:scale-105 transition-transform">
+                    <Target className="w-7 h-7" />
+                  </div>
+                  <span className="px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-wider bg-blue-50 text-[#0875C9] border border-blue-200/60">
+                    OUR MISSION
+                  </span>
+                </div>
+
+                <div>
+                  <h3 className="text-xl sm:text-2xl font-black text-[#073B69] tracking-tight mb-3">
+                    Engineered Solutions &amp; Lasting Value
+                  </h3>
+                  <div className="space-y-3 text-slate-700 text-xs sm:text-sm leading-relaxed">
+                    <p className="font-medium text-slate-800">
+                      &ldquo;To manufacture high-quality, innovative and sustainable construction chemical solutions that strengthen the built environment, create meaningful employment, develop local talent and contribute to economic growth across Africa.&rdquo;
+                    </p>
+                    <p className="text-slate-600">
+                      &ldquo;Through responsible manufacturing, continuous innovation and strategic partnerships, we aim to build a competitive African industry that creates lasting value for our customers, employees and communities.&rdquo;
+                    </p>
+                  </div>
+                </div>
+
+                {/* Key Focus Highlights */}
+                <div className="pt-2 flex flex-wrap gap-2">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium">
+                    <CheckCircle className="w-3.5 h-3.5 text-emerald-600" />
+                    High-Quality Solutions
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium">
+                    <CheckCircle className="w-3.5 h-3.5 text-emerald-600" />
+                    Local Talent Development
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium">
+                    <CheckCircle className="w-3.5 h-3.5 text-emerald-600" />
+                    Strategic Partnerships
+                  </span>
+                </div>
+              </div>
+
+              <div className="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                <span>Customer &amp; Community Value</span>
+                <span className="font-bold text-[#073B69]">Built Environment</span>
+              </div>
             </div>
           </div>
         </section>

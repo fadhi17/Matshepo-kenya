@@ -50,6 +50,14 @@ export const AboutPreview: React.FC = () => {
             <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
               Our focus is on quality, innovation and customer satisfaction, supporting durable and reliable building structures across residential and commercial developments.
             </p>
+            <div className="p-3.5 rounded-xl bg-blue-50/70 border border-blue-100 text-xs text-slate-700 leading-relaxed">
+              <span className="font-black text-[#0875C9] uppercase tracking-wider text-[10px] block mb-1">
+                Our Vision
+              </span>
+              <p className="font-medium text-slate-800">
+                &ldquo;To build a stronger, more prosperous Africa through sustainable manufacturing, innovation and industrial growth.&rdquo;
+              </p>
+            </div>
             <div className="pt-2">
               <Link
                 href="/about"

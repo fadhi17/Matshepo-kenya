@@ -15,6 +15,8 @@ export interface CompanyInfo {
   };
   businessHours: string;
   guaranteeYears: number;
+  vision: string;
+  mission: string;
 }
 
 export const companyData: CompanyInfo = {
@@ -35,4 +37,8 @@ export const companyData: CompanyInfo = {
   },
   businessHours: "Monday – Friday: 8:00 AM – 5:00 PM | Saturday: 8:30 AM – 1:00 PM",
   guaranteeYears: 10,
+  vision:
+    "To build a stronger, more prosperous Africa through sustainable manufacturing, innovation and industrial growth—creating opportunities, empowering communities and shaping a better future for generations to come.",
+  mission:
+    "To manufacture high-quality, innovative and sustainable construction chemical solutions that strengthen the built environment, create meaningful employment, develop local talent and contribute to economic growth across Africa. Through responsible manufacturing, continuous innovation and strategic partnerships, we aim to build a competitive African industry that creates lasting value for our customers, employees and communities.",
 };
